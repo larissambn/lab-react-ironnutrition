@@ -1,10 +1,20 @@
+function AddFoodBox() {
+  const [FoodBox, setFoodBox] = useState({
+    Name: '',
+    Image: '',
+    Calories: '',
+    Servings: '',
+  });
+}
+const {name, calories, servings, totalCalories} = props;
+
 function FoodBoxList(FoodBox) {
+  <Row/>
     return (
         {FoodBox.map((currentFoodBox) => {
-            return (
-                <Card
-                  key={Props.currentFoodBox.food}
-                  name={Props.currentFoodBox.food.name}
+            return ( 
+                <Card id={FoodBoxCard}
+                  key={Props.currentFoodBox.food.name}
                   calories={Props.currentFoodBox.food.calories}
                   servings={Props.currentFoodBox.food.servings}
                 />
@@ -14,5 +24,5 @@ function FoodBoxList(FoodBox) {
         }
       )
     } 
-
+    
 export default FoodBoxList;

@@ -1,4 +1,6 @@
-function FoodBox(food) {
+const { name, calories, servings, totalCalories } = props;
+
+function FoodBox(props) {
   return (
     <Col>
       <Card

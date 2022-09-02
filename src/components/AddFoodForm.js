@@ -14,7 +14,7 @@ function handleChange(event) {
 
 function AddFoodForm(props) {
   return (
-    <form>
+    <form id={newFood}>
       <Divider>Add Food Entry</Divider>
 
       <label>Name</label>

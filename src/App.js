@@ -7,19 +7,30 @@ import FoodBox from '../FoodBox';
 import ListofFoodBox from '..';
 import AddFood from './components/AddFood';
 import Search from '../Search.';
-import DeleteButton from '..';
-import AddFoodForm from '..';
+import DeleteButton from '../src/components/DeleteButton';
+import AddFoodForm from '../src/components/AddFoodForm';
+import HideForm from '../src/components/HideForm';
+import FeedBack from '../src/components/FeedBack';
 
 function App() {
   return (
     <div>
+      <Foods />
+      <Card />
       <Foodlist />
+      <Col />
       <FoodBox />
+      <Row />
       <ListofFoodBox />
       <AddFood />
       <Search />
       <DeleteButton />
+      <Divider />
+      <Input />
       <AddFoodForm />
+      <Button />
+      <HideForm />
+      <FeedBack />
     </div>
   );
 }

@@ -1,25 +1,16 @@
-function DeleteButton() {
-  const [FoodBox, updateFoodBox] = useState(defaultFoodBox);
+export default DeleteButton;
 
-  const handleRemoveItem = (e) => {
-    const name = e.target.getAttribute('name');
-    updateFoodBox(FoodBox.filter((food) => food.prop.name !== name));
-  };
+function DeleteButton() {  
+  const [FoodBox, updateFoodBox] = useState(defaultFoodBox);
+  const handleRemoveFoodBox = (e) => {
+  const name = e.target.getAttribute('name');
+  updateFoodBox(FoodBox.filter((food) => food.prop.name !== name));};
 
   return (
-    <div>
-      {list.map((food.prop.name) => {
-        return (
-          <>
-            <span name={food.prop.name} onClick={handleRemoveFoodBox}>
-              x
-            </span>
-            <span>{food.prop.names}</span>
-          </>
-        );
-      })}
-    </div>
-  );
+  
+  <div>
+  {FoodBox.map((food.prop.name)  
+   return (<> <span name={food.prop.name} onClick={handleRemoveFoodBox}></span>
+  <span>{food.prop.names}</span></>);){"}"}    
+  </div>);
 }
-
-export default DeleteButton;
